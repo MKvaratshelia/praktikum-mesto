@@ -1,3 +1,23 @@
+
+//import "../style.css";
+//import "./style.css";
+import Api from "./Api.js";
+import Card from "./Card.js";
+import CardList from "./CardList.js";
+import CreatePopupImage from "./CreatePopupImage.js";
+import Popup from "./Popup.js";
+import UserInfo from "./UserInfo.js";
+import FormValidator from "./FormValidator";
+//   import "../images/logo.svg";
+// import "../images/close.svg";
+// import Api from "./Api.js";
+// import Card from "./Card.js";
+// import CardList from "./CardList.js";
+// import CreatePopupImage from "./CreatePopupImage.js";
+// import Popup from "./Popup.js";
+// import UserInfo from "./UserInfo.js";
+// import FormValidator from "./FormValidator";
+
 const root = document.querySelector(".root");
 const container = document.querySelector(".places-list");
 const formUser = document.forms.user;
@@ -150,4 +170,5 @@ editButton.addEventListener("click", event => {
   userInfo.defaultNameAndJob(newName, newJob, userInfoName, userInfoJob);
   formValidatorUser.setSubmitButtonState(newName, newJob, popupButtonSave);
 });
+export {card,container,api,buttonLoad,popupButtonSave,popupButtonAdd};
 
