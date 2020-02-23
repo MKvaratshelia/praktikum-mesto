@@ -1,2 +1,0 @@
-# praktikum-mesto
-Сервис Mesto
