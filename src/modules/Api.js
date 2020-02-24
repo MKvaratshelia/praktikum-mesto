@@ -61,7 +61,7 @@ export default class Api {
       .finally(() => buttonLoad(false, popupButtonSave, "Сохранить"));
   }
   addNewCard(place, url) {
-    return fetch(this.options.baseUrl + "/cards", {
+    return fetch("http://praktikum.tk/cohort7" + "/cards", {
       method: "POST",
       headers: this.options.headers,
       body: JSON.stringify({

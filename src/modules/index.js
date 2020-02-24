@@ -52,7 +52,7 @@ const popupUserInfo = document.querySelector(".popup__user-info");
 const userAvatar = document.querySelector(".user-info__photo");
 const avatarButton = document.querySelector(".popup__button_save-avatar");
 const optionsApi = {
-  baseUrl: "http://praktikum.tk/cohort7",
+  baseUrl: "https://praktikum.tk/cohort7",
   headers: {
     authorization: "4d8a3a8e-7975-4987-a6e2-1615458dac98",
     "Content-Type": "application/json"
