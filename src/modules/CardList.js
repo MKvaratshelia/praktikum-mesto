@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
   constructor(card, ownerId) {
     this.card = card;
     this.ownerId = ownerId;

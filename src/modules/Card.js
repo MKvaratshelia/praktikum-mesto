@@ -1,7 +1,9 @@
-class Card {
+import {container,api,card} from "./index.js";
+export default class Card {
   constructor(name, link) {
     this.name = name;
     this.link = link;
+    
   }
   create(data) {
     const placeCard = document.createElement("div");
@@ -68,7 +70,7 @@ class Card {
   }
   handlers(element) {
     this.element = element;
-    this.element.addEventListener("click", this.like);
-    this.element.addEventListener("click", this.remove);
+    this.element.addEventListener("click",this.like);
+    this.element.addEventListener("click",this.remove);
   }
 }

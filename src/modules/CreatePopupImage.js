@@ -1,5 +1,5 @@
 
-class CreatePopupImage {
+export default class CreatePopupImage {
   constructor(element) {
     this.element = element;
     this.element.addEventListener("click", this.createLink.bind(this));

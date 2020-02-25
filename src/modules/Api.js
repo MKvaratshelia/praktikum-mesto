@@ -1,4 +1,5 @@
-class Api {
+import {popupButtonSave,buttonLoad,popupButtonAdd,avatarButton} from "./index";
+export default class Api {
   constructor(options) {
     this.options = options;
   }

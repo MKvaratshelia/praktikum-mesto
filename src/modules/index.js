@@ -1,3 +1,23 @@
+
+//import "../style.css";
+//import "./style.css";
+import Api from "./Api.js";
+import Card from "./Card.js";
+import CardList from "./CardList.js";
+import CreatePopupImage from "./CreatePopupImage.js";
+import Popup from "./Popup.js";
+import UserInfo from "./UserInfo.js";
+import FormValidator from "./FormValidator";
+//   import "../images/logo.svg";
+// import "../images/close.svg";
+// import Api from "./Api.js";
+// import Card from "./Card.js";
+// import CardList from "./CardList.js";
+// import CreatePopupImage from "./CreatePopupImage.js";
+// import Popup from "./Popup.js";
+// import UserInfo from "./UserInfo.js";
+// import FormValidator from "./FormValidator";
+
 const root = document.querySelector(".root");
 const container = document.querySelector(".places-list");
 const formUser = document.forms.user;
@@ -31,8 +51,9 @@ const popupPlaceClose = document.querySelector(".popup__close");
 const popupUserInfo = document.querySelector(".popup__user-info");
 const userAvatar = document.querySelector(".user-info__photo");
 const avatarButton = document.querySelector(".popup__button_save-avatar");
+const serverUrl = NODE_ENV === "production" ? "https://praktikum.tk/cohort7" : "http://praktikum.tk/cohort7";
 const optionsApi = {
-  baseUrl: "https://praktikum.tk/cohort7",
+  baseUrl: serverUrl,
   headers: {
     authorization: "4d8a3a8e-7975-4987-a6e2-1615458dac98",
     "Content-Type": "application/json"
@@ -150,4 +171,5 @@ editButton.addEventListener("click", event => {
   userInfo.defaultNameAndJob(newName, newJob, userInfoName, userInfoJob);
   formValidatorUser.setSubmitButtonState(newName, newJob, popupButtonSave);
 });
+export {card,container,api,buttonLoad,popupButtonSave,popupButtonAdd,avatarButton};
 
