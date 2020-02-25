@@ -51,7 +51,7 @@ const popupPlaceClose = document.querySelector(".popup__close");
 const popupUserInfo = document.querySelector(".popup__user-info");
 const userAvatar = document.querySelector(".user-info__photo");
 const avatarButton = document.querySelector(".popup__button_save-avatar");
-const serverUrl = NODE_ENV ==="development" ? "http://praktikum.tk/cohort7" : "https://praktikum.tk/cohort7";
+const serverUrl = NODE_ENV === "production" ? "https://praktikum.tk/cohort7" : "http://praktikum.tk/cohort7";
 const optionsApi = {
   baseUrl: serverUrl,
   headers: {
